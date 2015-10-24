@@ -1,4 +1,5 @@
 package fr.iutvalence.info.dut.m3105.tenniskata.tdd;
+
 public class TennisGame
 {
 	public static final String FIFTEEN_ALL = "Fifteen - all";
@@ -37,11 +38,17 @@ public class TennisGame
 
 	private void calculScore() 
 	{
-//		switch (serverCount)
-//		{
-//		case 0:
-//			serverScore = "LOVE";
-//		}
+		switch (serverCount)
+		{
+		case 0:
+			serverScore = "LOVE";
+		case 1:
+			serverScore = "Fifteen";
+		case 2:
+			serverScore = "Thirteen";
+		case 3:
+			serverScore
+		}
 			//TODO : calculer tous les scores possibles	
 	}
 

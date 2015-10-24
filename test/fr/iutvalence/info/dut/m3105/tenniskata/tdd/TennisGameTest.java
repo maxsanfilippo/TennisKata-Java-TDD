@@ -13,7 +13,7 @@ public class TennisGameTest
 	public void AnnonceScoreForNewGameShouldReturnNullForAllPlayers()
 	{
 		TennisGame tennisGame = new TennisGame();
-		assertEquals(tennisGame.getScore(), tennisGame.LOVE_ALL);
+		assertEquals(tennisGame.getScore(), TennisGame.LOVE_ALL);
 	}
 	
 	@Test
@@ -21,7 +21,7 @@ public class TennisGameTest
 	{
 		TennisGame tennisGame = new TennisGame();
 		tennisGame.serverScores();
-		assertEquals(tennisGame.getScore(), tennisGame.FIFTEEN_LOVE);
+		assertEquals(tennisGame.getScore(), TennisGame.FIFTEEN_LOVE);
 	}
 	
 	@Test
@@ -29,7 +29,7 @@ public class TennisGameTest
 	{
 		TennisGame tennisGame = new TennisGame();
 		tennisGame.receiverScores();
-		assertEquals(tennisGame.getScore(), tennisGame.LOVE_FIFTEEN);
+		assertEquals(tennisGame.getScore(), TennisGame.LOVE_FIFTEEN);
 	}
 
 	@Test
@@ -38,7 +38,7 @@ public class TennisGameTest
 		TennisGame tennisGame = new TennisGame();
 		tennisGame.receiverScores();
 		tennisGame.serverScores();
-		assertEquals(tennisGame.getScore(), tennisGame.FIFTEEN_ALL);
+		assertEquals(tennisGame.getScore(), TennisGame.FIFTEEN_ALL);
 	}
 
 	@Test
@@ -49,6 +49,6 @@ public class TennisGameTest
 		tennisGame.serverScores();
 		tennisGame.serverScores();
 		tennisGame.serverScores();
-		assertEquals(tennisGame.getScore(), "Fifteen - forty");
+		assertEquals(tennisGame.getScore(), "Fifteen - Forty");
 	}
 }
