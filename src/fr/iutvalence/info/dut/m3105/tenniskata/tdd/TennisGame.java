@@ -44,29 +44,38 @@ public class TennisGame
 		{
 		case 0:
 			serverScore = "Love";
+			break;
 		case 1:
 			serverScore = "Fifteen";
+			break;
 		case 2:
 			serverScore = "Thirteen";
+			break;
 		case 3:
-			serverScore = "Forty";		
+			serverScore = "Forty";	
+			break;
 		}
 		
 		switch (receiverCount)
 		{
 		case 0:
 			receiverScore = "Love";
+			break;
 		case 1:
 			receiverScore = "Fifteen";
+			break;
 		case 2:
 			receiverScore = "Thirteen";
+			break;
 		case 3:
 			receiverScore = "Forty";
+			break;
 		}
 		
 		if (serverScore == receiverScore)
 			score = receiverScore + " - all";
-		score = serverScore + " - " + receiverScore;
+		else 
+			score = serverScore + " - " + receiverScore;
 	}
 
 	
